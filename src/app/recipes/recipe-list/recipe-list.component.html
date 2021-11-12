@@ -1,1 +1,17 @@
-<p>recipe-list works!</p>
+<div class="container-fluid p-2" style="background-color: #262626;">
+    <a href="#" class="text-decoration-none text-white" *ngFor="let recipe of recipes">
+        <div class="row">
+            <div class="col-md-8">
+                <h4>
+                    {{ recipe.recipeName }}
+                </h4>
+                <p>
+                    {{ recipe.recipeDescription }}
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img class="img-fluid" src="{{ recipe.recipeImagepath }}" alt="">
+            </div>
+        </div>
+    </a>
+</div>
