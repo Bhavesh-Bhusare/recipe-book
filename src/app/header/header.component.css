@@ -1,3 +1,5 @@
-h1 {
-    color: blue;
+.recipe_header {
+    box-shadow: inset 1px 0px 8px 1px whitesmoke;
+    font-weight: bold;
+    padding: 10px;
 }

@@ -1,17 +1,26 @@
-<div class="container-fluid p-2" style="background-color: #262626;">
-    <a href="#" class="text-decoration-none text-white" *ngFor="let recipe of recipes">
-        <div class="row">
-            <div class="col-md-8">
-                <h4>
-                    {{ recipe.recipeName }}
-                </h4>
-                <p>
-                    {{ recipe.recipeDescription }}
-                </p>
-            </div>
-            <div class="col-md-4">
-                <img class="img-fluid" src="{{ recipe.recipeImagepath }}" alt="">
-            </div>
+<div class="container-fluid py-2 ">
+    <div class="row">
+        <div class="col-xs-12">
+            <button type="button" class="btn btn-success mt-2 mb-3">Add Recipe</button>
         </div>
-    </a>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <a href="#" class="list-group-item clearfix text-decoration-none " *ngFor="let recipe of recipes">
+                <div class="row">
+                    <div class="col-9">
+                        <h4 class="list-group-item-heading">
+                            {{ recipe.recipeName }}
+                        </h4>
+                        <p class="list-group-item-text">
+                            {{ recipe.recipeDescription }}
+                        </p>
+                    </div>
+                    <div class="col-3 d-flex flex-column justify-content-center">
+                        <img class="img-fluid text-center" src="{{ recipe.recipeImagepath }}" alt="" height="100px" width="100px">
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
 </div>

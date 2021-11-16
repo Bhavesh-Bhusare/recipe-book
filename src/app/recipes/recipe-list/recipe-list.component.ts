@@ -8,6 +8,7 @@ import { Recipe } from '../recipe.model';
 })
 export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [
+    new Recipe('Pav Bhaji','Pav bhaji is a fast food dish from India consisting of a thick vegetable curry served with a soft bread roll. Its origins are in the state of Maharashtra.','https://static.toiimg.com/thumb/52416693.cms?imgsize=789478&width=509&height=340'),
     new Recipe('Pav Bhaji','Pav bhaji is a fast food dish from India consisting of a thick vegetable curry served with a soft bread roll. Its origins are in the state of Maharashtra.','https://static.toiimg.com/thumb/52416693.cms?imgsize=789478&width=509&height=340')
   ];
 
